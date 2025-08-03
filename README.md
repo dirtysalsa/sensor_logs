@@ -8,3 +8,5 @@ Sensor logs
     lastReadingTime = startTime;
     lastBsecCall = startTime;
 }
+
+The data format changes a bit in the newer versions but it's a logical progression.
