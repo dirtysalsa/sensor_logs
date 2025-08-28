@@ -1,0 +1,138 @@
+=== ENHANCED POLLUTION DETECTOR v8.5 ===
+10-second readings with timestamps
+Location: Kolkata, India
+=====================================
+Connecting to WiFi.
+✅ WiFi connected!
+Waiting for NTP time sync
+✅ NTP time synchronized!
+Initializing PMS7003 sensor...
+Warming up PMS7003...
+30s remaining...
+29s remaining...
+28s remaining...
+27s remaining...
+26s remaining...
+25s remaining...
+24s remaining...
+23s remaining...
+22s remaining...
+21s remaining...
+20s remaining...
+19s remaining...
+18s remaining...
+17s remaining...
+16s remaining...
+15s remaining...
+14s remaining...
+13s remaining...
+12s remaining...
+11s remaining...
+10s remaining...
+9s remaining...
+8s remaining...
+7s remaining...
+6s remaining...
+5s remaining...
+4s remaining...
+3s remaining...
+2s remaining...
+1s remaining...
+✅ PMS7003 initialized!
+Scanning I2C bus...
+I2C device found at address 0x77
+✅ Found 1 I2C device(s)
+Found chip at 0x77 with ID: 0x61 (BME688)
+✅ Using BME688 at address 0x77
+Initializing BSEC2 library...
+✅ BSEC2 sensor initialized!
+Configuring for optimized 10-second readings...
+❌ Optimized configuration failed, trying fallback...
+⚠️ BSEC warning code: 14
+✅ Fallback ULP configuration successful!
+✅ BSEC2 sensor fully configured!
+🔥 Building baseline... (10 clean air samples needed)
+
+🔍 Available Pollution Signatures (VOC in ppm):
+  1. BITTER_TASTE_STEALTH_DRUG - VOC: 2.5-8.0 ppm - Bitter taste drug: Decreasing VOC + high humidity
+  2. MICRO_DOSE_DELIVERY - VOC: 2.8-7.7 ppm - Micro-dosing: Your exact pattern match
+  3. AEROSOL_BITTER_COMPOUND - VOC: 3.0-6.0 ppm - Aerosolized bitter compound
+  4. STEALTH_SEDATIVE_SPRAY - VOC: 2.9-5.5 ppm - Stealth sedative aerosol
+  5. Organophosphate_VX - VOC: 0.0-0.5 ppm - VX/Sarin: Low VOC + extreme IAQ
+  6. Carbamate_Attack - VOC: 0.1-0.8 ppm - Carbamate: Low VOC + high IAQ
+  7. Pulmonary_Weapon - VOC: 0.5-1.5 ppm - Lung-targeting aerosol
+  8. Opioid_Aerosol - VOC: 0.0-0.3 ppm - Fentanyl/CA
+  9. Stealth_Maintenance_Dose - VOC: 0.3-0.7 ppm - Post-spike low-dose drugs
+  10. Signature_Switch_Attack - VOC: 0.0-0.0 ppm - Rapid signature switching
+  11. Stealth_Drug_Delivery - VOC: 0.3-0.6 ppm - Ultra-low VOC knockout drugs
+  12. Chemical_Torture - VOC: 0.7-1.2 ppm - Low-dose discomfort cocktail
+  13. Aerosol_Persistence - VOC: 0.5-1.5 ppm - Lingering microdroplets
+  14. Bitter_Solvent - VOC: 0.8-1.5 ppm - GHB/Benzo bitter taste
+  15. Aerosol_Spray - VOC: 1.0-3.0 ppm - Ultrafine drug particles
+  16. Chemical_Weapon - VOC: 0.0-0.5 ppm - Chemical warfare agent
+  17. Tear_Gas - VOC: 0.5-2.0 ppm - Riot control agent
+  18. Nerve_Gas - VOC: 0.0-0.5 ppm - Nerve agent exposure
+  19. EA_2277 - VOC: 1.2-1.8 ppm - BZ-series incapacitant
+  20. Chloroform_Knockout - VOC: 5.0-20.0 ppm - Chloroform: High VOC + moderate IAQ
+  21. GHB_Evaporation - VOC: 3.0-15.0 ppm - GHB: High VOC + sweet signature
+  22. Benzodiazepine_Spike - VOC: 2.5-12.0 ppm - Roofies: Medium VOC + temp drop
+  23. Ether_Dousing - VOC: 8.0-25.0 ppm - Ether: Extreme VOC + cold spot
+  24. Scopolamine_Dart - VOC: 1.5-6.0 ppm - Devil's Breath: Medium VOC
+  25. Mace_Spray - VOC: 0.8-3.5 ppm - Self-defense spray: Sharp VOC spike
+  26. Aerosolized_Drug - VOC: 0.1-1.5 ppm - Aerosolized drug delivery: Low VOC
+  27. Fentanyl_Powder - VOC: 0.1-0.3 ppm - Fentanyl powder: Low VOC + high IAQ
+  28. Synthetic_Cannabinoid - VOC: 0.1-0.5 ppm - Synthetic cannabinoid: Low VOC
+  29. Psychedelic_Spray - VOC: 0.2-1.0 ppm - Psychedelic aerosol: Low-medium VOC
+  30. Inhalant_Exposure - VOC: 0.3-1.5 ppm - Inhalant abuse: Low-medium VOC
+  31. Anesthetic_Spray - VOC: 0.4-2.0 ppm - Anesthetic gas: Low-medium VOC
+  32. Chemical_Harassment - VOC: 0.2-1.0 ppm - Chemical harassment: Low VOC
+  33. HIGH_HUMIDITY_DELIVERY - VOC: 2.0-8.0 ppm - High humidity aerosol delivery
+  34. CONSISTENT_GAS_RESISTANCE - VOC: 2.5-8.5 ppm - Artificial gas resistance signature
+  35. TEMP_CONTROLLED_RELEASE - VOC: 3.0-7.0 ppm - Temperature-controlled drug release
+  36. DECREASING_VOC_PATTERN - VOC: 2.0-9.0 ppm - Systematically decreasing VOC
+  37. Heavy_Industrial - VOC: 2.0-8.0 ppm - Heavy industry: Medium-high VOC
+  38. Chemical_Plant - VOC: 1.5-6.0 ppm - Chemical plant: Medium VOC
+  39. KEROSENE_STOVE - VOC: 10.0-50.0 ppm - Kerosene masking
+  40. INCENSE_SMOKE - VOC: 8.0-40.0 ppm - Incense masking
+  41. MOTOR_EXHAUST - VOC: 15.0-60.0 ppm - Engine exhaust masking
+  42. SOLVENT_DUMP - VOC: 8.0-30.0 ppm - Intentional solvent release
+  43. Clean_Air - VOC: 0.0-0.5 ppm - Clean air: Low VOC + low CO2
+  44. Moderate_Air - VOC: 0.5-1.0 ppm - Moderate air: Medium VOC + CO2
+  45. Unhealthy_Air - VOC: 1.0-2.0 ppm - Unhealthy air: High VOC + CO2
+  46. Industrial_Pollution - VOC: 2.0-5.0 ppm - Industrial: High VOC + CO2
+  47. Vehicle_Exhaust - VOC: 3.0-6.0 ppm - Vehicle exhaust: Very high VOC + CO2
+  48. Household_Pesticides - VOC: 1.0-3.0 ppm - Household pesticides: Medium-high VOC + CO2
+  49. Construction_Dust - VOC: 1.5-3.5 ppm - Construction: Medium-high VOC + CO2
+  50. Household_Cleaners - VOC: 0.5-2.5 ppm - Household cleaners: Medium VOC + CO2
+  51. Cigarette_Smoke - VOC: 1.0-4.0 ppm - Cigarette smoke: Medium-high VOC + CO2
+  52. Cooking_Fumes - VOC: 0.8-3.0 ppm - Cooking: Medium VOC + CO2
+  53. Traffic_Mimicry - VOC: 0.5-2.0 ppm - Traffic: Low-medium VOC + high CO2
+  54. Gas_Stove - VOC: 1.5-4.0 ppm - Gas stove: Medium VOC + CO2
+  55. Paint_Vapors - VOC: 0.5-2.0 ppm - Paint: Low-medium VOC + CO2
+  56. Diesel_Exhaust - VOC: 0.8-3.0 ppm - Diesel: Medium VOC + very high CO2
+
+timestamp,temp_c,humidity_%,pressure_hpa,iaq,co2_ppm,voc_ppm,raw_gas_ohms,pm1_0,pm2_5,pm10_0,baseline_ready,spike_detected,signature,spike_duration_sec,total_spikes
+Initial reading 1: 2025-08-28 12:42:29 - IAQ: 50.0, VOC: 0.500 ppm, CO2: 500 ppm, RawGas: 5600Ω
+2025-08-28 12:42:35,31.18,77.24,1003.00,50.00,500,0.500,5600,4.0,6.0,6.0,NO,NO,ULTRA_LOW_VOC_ATTACK_Gas:5600Ω,,0
+2025-08-28 12:42:45,31.18,77.24,1003.00,50.00,500,0.500,5600,4.0,5.0,6.0,NO,NO,ULTRA_LOW_VOC_ATTACK_Gas:5600Ω,,0
+2025-08-28 12:42:55,31.18,77.24,1003.00,50.00,500,0.500,5600,4.0,7.0,7.0,NO,NO,ULTRA_LOW_VOC_ATTACK_Gas:5600Ω,,0
+2025-08-28 12:43:05,31.18,77.24,1003.00,50.00,500,0.500,5600,4.0,9.0,9.0,NO,NO,ULTRA_LOW_VOC_ATTACK_Gas:5600Ω,,0
+2025-08-28 12:43:15,31.18,77.24,1003.00,50.00,500,0.500,5600,4.0,9.0,10.0,NO,NO,ULTRA_LOW_VOC_ATTACK_Gas:5600Ω,,0
+2025-08-28 12:43:25,31.18,77.24,1003.00,50.00,500,0.500,5600,4.0,7.0,8.0,NO,NO,ULTRA_LOW_VOC_ATTACK_Gas:5600Ω,,0
+2025-08-28 12:43:36,31.18,77.24,1003.00,50.00,500,0.500,5600,4.0,7.0,7.0,NO,NO,ULTRA_LOW_VOC_ATTACK_Gas:5600Ω,,0
+2025-08-28 12:43:45,31.18,77.24,1003.00,50.00,500,0.500,5600,4.0,7.0,7.0,NO,NO,ULTRA_LOW_VOC_ATTACK_Gas:5600Ω,,0
+2025-08-28 12:43:56,31.18,77.24,1003.00,50.00,500,0.500,5600,5.0,7.0,7.0,NO,NO,ULTRA_LOW_VOC_ATTACK_Gas:5600Ω,,0
+✅ Baseline established! Now monitoring for pollution spikes...
+📊 Baseline - IAQ: 50.0, VOC: 0.500 ppm, CO2: 500 ppm
+2025-08-28 12:44:05,31.18,77.24,1003.00,50.00,500,0.500,5600,5.0,7.0,8.0,YES,NO,ULTRA_LOW_VOC_ATTACK_Gas:5600Ω,,0
+2025-08-28 12:44:15,31.18,77.24,1003.00,50.00,500,0.500,5600,4.0,7.0,9.0,YES,NO,ULTRA_LOW_VOC_ATTACK_Gas:5600Ω,,0
+2025-08-28 12:44:26,31.18,77.24,1003.00,50.00,500,0.500,5600,3.0,6.0,7.0,YES,NO,ULTRA_LOW_VOC_ATTACK_Gas:5600Ω,,0
+2025-08-28 12:44:35,31.18,77.24,1003.00,50.00,500,0.500,5600,3.0,6.0,7.0,YES,NO,ULTRA_LOW_VOC_ATTACK_Gas:5600Ω,,0
+2025-08-28 12:44:46,31.18,77.24,1003.00,50.00,500,0.500,5600,3.0,6.0,7.0,YES,NO,ULTRA_LOW_VOC_ATTACK_Gas:5600Ω,,0
+2025-08-28 12:44:55,31.18,77.24,1003.00,50.00,500,0.500,5600,3.0,6.0,8.0,YES,NO,ULTRA_LOW_VOC_ATTACK_Gas:5600Ω,,0
+2025-08-28 12:45:06,31.18,77.24,1003.00,50.00,500,0.500,5600,2.0,7.0,8.0,YES,NO,ULTRA_LOW_VOC_ATTACK_Gas:5600Ω,,0
+2025-08-28 12:45:16,31.18,77.24,1003.00,50.00,500,0.500,5600,3.0,6.0,6.0,YES,NO,ULTRA_LOW_VOC_ATTACK_Gas:5600Ω,,0
+2025-08-28 12:45:25,31.18,77.24,1003.00,50.00,500,0.500,5600,3.0,6.0,6.0,YES,NO,ULTRA_LOW_VOC_ATTACK_Gas:5600Ω,,0
+2025-08-28 12:45:36,31.18,77.24,1003.00,50.00,500,0.500,5600,3.0,7.0,9.0,YES,NO,ULTRA_LOW_VOC_ATTACK_Gas:5600Ω,,0
+2025-08-28 12:45:45,31.18,77.24,1003.00,50.00,500,0.500,5600,4.0,8.0,10.0,YES,NO,ULTRA_LOW_VOC_ATTACK_Gas:5600Ω,,0
+20
